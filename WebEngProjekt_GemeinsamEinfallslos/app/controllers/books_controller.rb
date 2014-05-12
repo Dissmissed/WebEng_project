@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   layout 'books_and_chunks'
   before_filter :authenticate_user!
-  before_filter :find_all_users, :only => [:new, :edit]
+  before_filter :find_all_users, :only => [:new, :edit, :create, :update]
 
   # GET /books
   # GET /books.json
@@ -22,6 +22,9 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html { render_check_template } # show html
       format.json { render json: @book }
+      format.pdf do
+        render :pdf => "#{@book.title}" #TODO, klappt noch nicht
+      end
     end
   end
 

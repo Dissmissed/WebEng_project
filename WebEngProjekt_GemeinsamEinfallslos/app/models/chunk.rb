@@ -3,7 +3,9 @@ class Chunk < ActiveRecord::Base
   belongs_to :book
   attr_accessible :content, :section, :title, :user_id, :original_updated_at
   attr_writer :original_updated_at
+  validates :section, :title, :user_id, :original_updated_at, presence: true
   validate :handle_conflict, only: :update
+  validates_format_of :section, :with => /^[1-9](\.\d(\.\d)?)?$/, :message => "must look like '2[.3[.4]]'"
 
   has_paper_trail
 
@@ -33,4 +35,5 @@ class Chunk < ActiveRecord::Base
       end
     end
   end
+
 end

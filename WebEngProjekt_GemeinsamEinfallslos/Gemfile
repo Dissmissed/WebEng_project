@@ -26,6 +26,8 @@ gem 'devise'                # Benutzermanagement, Authentifizierung
 gem 'paper_trail',  '~> 2'  # Für Paperclip benötigt
 gem 'paperclip', '~> 3.0'   # Versionierung
 gem 'ckeditor'              # WYSIWYG-Editor
+gem 'wkhtmltopdf-binary'    # PDF-Exporter
+gem 'wicked_pdf'            # Für wkhtmltopdf-binary benötigt
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
