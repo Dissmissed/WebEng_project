@@ -1,0 +1,14 @@
+<div id="books_tree">
+  <ul>
+    <% books.each do |book| %>
+        <li id="book<%= book.id %>" class="book"><%= link_to "#{book.title}
+(#{book.edition})", book %>
+          <ul>
+            <% book.chunks.each do |chunk| %>
+                <li id="chunk<%= chunk.id %>" class="chunk"><%= link_to chunk.title, edit_book_chunk_path(book, chunk) %></li>
+            <% end %>
+          </ul>
+        </li>
+    <% end %>
+  </ul>
+</div>

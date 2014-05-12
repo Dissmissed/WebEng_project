@@ -15,12 +15,17 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
+
+gem 'devise'                # Benutzermanagement, Authentifizierung
+gem 'paper_trail',  '~> 2'  # Für Paperclip benötigt
+gem 'paperclip', '~> 3.0'   # Versionierung
+gem 'ckeditor'              # WYSIWYG-Editor
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,4 +1,26 @@
 WebEngProjektGemeinsameinfallslos::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  # Startseite der Applikation
+  root :to => 'books#index'
+  # verschachtelte Ressourcen
+  resources :books do
+    resources :chunks
+  end
+  devise_for :users
+
+
+  #devise_for :users
+
+  #resources :chunks
+
+
+  #resources :books
+
+
+  #resources :users
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

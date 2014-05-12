@@ -1,0 +1,16 @@
+<h1><%= @chunk.title %></h1>
+<br/>
+<p>
+  <b>Section:</b>
+  <%= @chunk.section %>
+</p>
+<p>
+  <b>Version:</b>
+  <%= @chunk.version %>
+</p>
+<p>
+  <b>User:</b>
+  <%= @chunk.username %>
+</p>
+<p><%= raw @chunk.content %></p>
+<%= button_to 'Back', @book, method: :get %>

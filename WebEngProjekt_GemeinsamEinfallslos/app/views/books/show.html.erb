@@ -1,0 +1,60 @@
+<p>
+  <b>Title:</b>
+  <%= @book.title %>
+</p>
+
+<p>
+  <b>Edition:</b>
+  <%= @book.edition %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%= @book.published %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @book.genre %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @book.tags %>
+</p>
+
+<br/>
+<h2>Chunks</h2>
+<% if @book.has_chunks? %>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Section</th>
+        <th>User</th>
+        <th>Version</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <% @book.chunks.each do |chunk| %>
+          <tr>
+            <td><%= chunk.title %></td>
+            <td><%= chunk.section %></td>
+            <td><%= chunk.username %></td>
+            <td><%= chunk.versions.last.id unless chunk.versions == nil %></td>
+            <td><%= button_to 'Show', book_chunk_path(@book, chunk), method:
+                    :get %></td>
+            <td><%= button_to 'Edit', edit_book_chunk_path(@book, chunk),
+                              method: :get %> </td>
+            <td><%= button_to 'Destroy', book_chunk_path(@book, chunk), method:
+                    :delete, data: {confirm: 'Are you sure?'} %> </td>
+          </tr>
+      <% end %>
+    </table>
+<% else %>
+    <p>No chunks found.</p>
+<% end %>
+<%= button_to 'New Chunk', new_book_chunk_path(@book), method: :get %>
+<br/>
+
+<%= link_to 'Back', books_path %>
