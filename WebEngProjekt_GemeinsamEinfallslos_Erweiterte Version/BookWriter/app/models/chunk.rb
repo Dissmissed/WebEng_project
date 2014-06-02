@@ -17,6 +17,7 @@ class Chunk < ActiveRecord::Base
   validates :title, :uniqueness => {:scope => :book_id}
   validates :position, :uniqueness => {:scope => :book_id}
   validate :handle_conflict, only: :update
+  validates_format_of :section, :with => /^[1-9](\.\d(\.\d)?)?$/, :message => "must look like '2[.3[.4]]'"
 
   def username
     user.username

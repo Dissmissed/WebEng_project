@@ -13,6 +13,27 @@ div#left {
 }
 
 div#content {
-    margin-left: 250px;
+    /*margin-left: 250px;*/
+    float: left;
     padding-left: 10px;
+}
+
+div#content h1 {
+    margin-top: 0px;
+}
+
+div#content table {
+    border-collapse: collapse;
+}
+
+div#content table td, div#content table th {
+    border: 1px solid lightskyblue;
+    padding: 3px 7px 2px 7px;
+}
+
+div#content table th {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: lightblue;
+    color:#ffffff;
 }
