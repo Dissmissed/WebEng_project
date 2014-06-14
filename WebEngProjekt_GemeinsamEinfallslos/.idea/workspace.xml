@@ -14,8 +14,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/WebEngProjekt_GemeinsamEinfallslos@db_migrate__WebEngProjekt_GemeinsamEinfallslos.coverage" NAME="db:migrate: WebEngProjekt_GemeinsamEinfallslos Coverage Results" MODIFIED="1399884904957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WebEngProjekt_GemeinsamEinfallslos" />
     <SUITE FILE_PATH="coverage/WebEngProjekt_GemeinsamEinfallslos@Development__WebEngProjekt_GemeinsamEinfallslos.coverage" NAME="Development: WebEngProjekt_GemeinsamEinfallslos Coverage Results" MODIFIED="1399904034286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WebEngProjekt_GemeinsamEinfallslos" />
-    <SUITE FILE_PATH="coverage/WebEngProjekt_GemeinsamEinfallslos@Rails_console__WebEngProjekt_GemeinsamEinfallslos.coverage" NAME="Rails console: WebEngProjekt_GemeinsamEinfallslos Coverage Results" MODIFIED="1399905624509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WebEngProjekt_GemeinsamEinfallslos" />
     <SUITE FILE_PATH="coverage/WebEngProjekt_GemeinsamEinfallslos@IRB_console__WebEngProjekt_GemeinsamEinfallslos.coverage" NAME="IRB console: WebEngProjekt_GemeinsamEinfallslos Coverage Results" MODIFIED="1399883527920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WebEngProjekt_GemeinsamEinfallslos" />
+    <SUITE FILE_PATH="coverage/WebEngProjekt_GemeinsamEinfallslos@Rails_console__WebEngProjekt_GemeinsamEinfallslos.coverage" NAME="Rails console: WebEngProjekt_GemeinsamEinfallslos Coverage Results" MODIFIED="1399905624509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WebEngProjekt_GemeinsamEinfallslos" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/books/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="90" selection-start="605" selection-end="605" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="555">
+            <state line="23" column="90" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="61" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="765">
+            <state line="29" column="61" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="books_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="64" selection-start="678" selection-end="678" vertical-scroll-proportion="0.52884614" vertical-offset="45" max-vertical-offset="1530">
+            <state line="25" column="64" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -59,7 +59,7 @@
       <file leaf-file-name="mime_types.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="43" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="5" column="43" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/books/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
+            <state line="4" column="44" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="8" column="39" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="615">
+            <state line="10" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="615">
               <folding>
                 <marker date="1399904253283" expanded="true" signature="204:284" placeholder="..." />
                 <marker date="1399904253283" expanded="true" signature="293:367" placeholder="..." />
@@ -111,7 +111,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/books/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="46" selection-start="1344" selection-end="1344" vertical-scroll-proportion="-21.708334" vertical-offset="364" max-vertical-offset="990">
+            <state line="59" column="46" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="13" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -210,7 +210,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,7 +367,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,6 +381,7 @@
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebEngProjekt_GemeinsamEinfallslos_Erweiterte Version" />
   </component>
   <component name="RunManager" selected="IRB console.Rails console: WebEngProjekt_GemeinsamEinfallslos">
     <configuration default="false" name="Rails console: WebEngProjekt_GemeinsamEinfallslos" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -606,9 +607,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: WebEngProjekt_GemeinsamEinfallslos" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: WebEngProjekt_GemeinsamEinfallslos" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console: WebEngProjekt_GemeinsamEinfallslos" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: WebEngProjekt_GemeinsamEinfallslos" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console: WebEngProjekt_GemeinsamEinfallslos" />
+        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: WebEngProjekt_GemeinsamEinfallslos" />
       </list>
     </recent_temporary>
   </component>
@@ -655,12 +656,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -680,18 +681,56 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/books/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/chunks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+        <state line="77" column="0" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/books/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="77" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="855">
+        <state line="8" column="39" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="450">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="615">
+          <folding>
+            <marker date="1399904253283" expanded="true" signature="204:284" placeholder="..." />
+            <marker date="1399904253283" expanded="true" signature="293:367" placeholder="..." />
+            <marker date="1399904253283" expanded="true" signature="376:448" placeholder="..." />
+            <marker date="1399904253283" expanded="true" signature="630:777" placeholder="..." />
+            <marker date="1399904253283" expanded="true" signature="786:907" placeholder="..." />
+            <marker date="1399904253283" expanded="true" signature="916:1090" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="46" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="77" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
@@ -710,30 +749,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="15" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600">
-          <folding />
-        </state>
+        <state line="15" column="31" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -745,16 +776,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/chunk.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="630">
-          <folding />
-        </state>
+        <state line="19" column="22" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
@@ -781,9 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
-          <folding />
-        </state>
+        <state line="3" column="11" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140512082955_create_books.rb">
@@ -838,23 +863,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="15" column="44" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -866,9 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chunks/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600">
-          <folding />
-        </state>
+        <state line="15" column="31" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
@@ -880,14 +897,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="8" column="39" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="615">
+        <state line="10" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="615">
           <folding>
             <marker date="1399904253283" expanded="true" signature="204:284" placeholder="..." />
             <marker date="1399904253283" expanded="true" signature="293:367" placeholder="..." />
@@ -901,30 +918,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="90" selection-start="605" selection-end="605" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="555">
+        <state line="23" column="90" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
+        <state line="4" column="44" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/chunk.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="63" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
+        <state line="7" column="63" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.075" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.075" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/chunks_controller.rb">
@@ -943,16 +956,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
+        <state line="7" column="5" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="25" selection-start="968" selection-end="968" vertical-scroll-proportion="0.95" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="38" column="25" selection-start="968" selection-end="968" vertical-scroll-proportion="0.95" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -971,14 +980,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="46" selection-start="1344" selection-end="1344" vertical-scroll-proportion="-21.708334" vertical-offset="364" max-vertical-offset="990">
+        <state line="59" column="46" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="64" selection-start="678" selection-end="678" vertical-scroll-proportion="0.52884614" vertical-offset="45" max-vertical-offset="1530">
+        <state line="25" column="64" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
