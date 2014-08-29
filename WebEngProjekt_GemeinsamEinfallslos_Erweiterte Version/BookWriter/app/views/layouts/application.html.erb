@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <title>BookWriter</title>
+  <%-# <meta http-equiv="content-type" content="text/html; charset=utf-8"/> -%>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GemeinsamEinfallslos</title>
+  <%-# Unterstützung für Media Queries und HTML5-Elemente im Internet Explorer über HTML5 shim und Respond.js -%>
+  <%-# ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -%>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div id="layout_container" class="container">
 
-<div id="layout_container">
+      <div id="top" class="navbar navbar-inverse navbar-static-top" role="navigation">
 
-  <div id="top">
+        <div id="navbar" class="container">
 
-    <% if user_signed_in? %>
-        <%= link_to I18n.t('views.layout.home'), books_path %> |
-        <%= "#{I18n.t('views.layout.account')}: #{current_user.username}" %> |
-        <%= link_to I18n.t('views.layout.my_account'), edit_user_registration_path %> |
-        <%= link_to I18n.t('views.layout.logout'), destroy_user_session_path, method: :delete %>
-    <% end %>
+          <div class="navbar-header pull-left">
+            <%= link_to "GemeinsamEinfallslos", books_path, :class => "navbar-brand" %>
 
-  </div>
+          </div>
 
-  <div id="left">
-    <%= yield :left %>
-  </div>
+          <div class="navbar-header pull-right">
 
-  <div id="content">
+            <% if user_signed_in? %>
+              <ul class="nav navbar-nav">
+                <li><%= link_to "Startseite", books_path %></li>
+                <li><%= link_to "#{current_user.username}'s Konto", edit_user_registration_path %></li>
+                <li><%= link_to I18n.t('views.layout.logout'), destroy_user_session_path, method: :delete %></li>
+              </ul>
+            <% else %>
+              <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {class: "navbar-form navbar-right", role: "form"}) do |f| %>
+                <div class="form-group">
+                  <%= f.text_field :login, :class => "form-control" %>
+                </div>
+                <div class="form-group">
+                  <%= f.password_field :password, :class => "form-control" %>
+                </div>
 
-    <% if flash[:notice] %>
-        <p id="notice"><%= flash[:notice] %></p>
-    <% end %>
-    <% if flash[:error] %>
-        <p id="error"><%= flash[:error] %></p>
-    <% end %>
+                <% if devise_mapping.rememberable? -%>
+                  <div class="form-group">
+                    <%= f.check_box :remember_me %> <%= f.label :remember_me, "Eingeloggt bleiben", :id => "lbl_remember_me" %>
+                  </div>
+                <% end -%>
 
-    <%= yield %>
+                <%= f.submit t('.sign_in', :default => "Sign in"), :class => "btn btn-success" %>
+              <% end %>
+            <% end %>
 
-  </div>
+          </div>
 
-</div>
+        </div>
 
+      </div>
+
+      <% if user_signed_in? %>
+        <div id="left" class="col-md-3">
+          <%= yield :left %>
+        </div>
+      <% end %>
+
+      <div id="content" <% if user_signed_in? %>class="col-md-9"<% else %>class="col-md-12"<% end %>>
+
+        <% if flash[:notice] %>
+            <div id="notice_div">
+              <p id="notice"><%= flash[:notice] %></p>
+            </div>
+        <% end %>
+        <% if flash[:error] %>
+            <div id="error_div">
+              <p id="error"><%= flash[:error] %></p>
+            </div>
+        <% end %>
+
+        <%= yield %>
+
+      </div>
+
+    </div>
 </body>
 </html>

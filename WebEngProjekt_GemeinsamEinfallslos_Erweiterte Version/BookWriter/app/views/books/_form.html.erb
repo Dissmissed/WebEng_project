@@ -11,32 +11,32 @@
         </div>
     <% end %>
 
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :title %>
       <br/>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :edition %>
       <br/>
-      <%= f.text_field :edition %>
+      <%= f.text_field :edition, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :genre %>
       <br/>
-      <%= f.text_field :genre %>
+      <%= f.text_field :genre, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :abstract %>
       <br/>
-      <%= f.cktext_area :abstract %>
+      <%= f.cktext_area :abstract, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :tags %>
       <br/>
-      <%= f.text_field :tags %>
+      <%= f.text_field :tags, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :users %>
       <br/>
       <% @users.each do |user| %>
@@ -47,6 +47,6 @@
       <% end %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit :class => "btn btn-primary" %>
     </div>
 <% end %>

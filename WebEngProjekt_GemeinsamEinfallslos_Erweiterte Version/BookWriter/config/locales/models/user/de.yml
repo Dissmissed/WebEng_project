@@ -9,7 +9,7 @@ de:
         first_name: 'Vorname'
         last_name: 'Nachname'
         username: 'Benutzerkennung'
-        login: 'Benutzerkennung oder eMail-Adresse'
+        login: 'Login'
         password: 'Passwort'
         password_confirmation: 'Passwort (Wiederholung)'
         current_password: 'Aktuelles Passwort'

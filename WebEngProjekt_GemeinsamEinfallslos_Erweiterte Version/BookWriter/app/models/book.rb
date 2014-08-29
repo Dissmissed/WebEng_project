@@ -5,7 +5,7 @@ class Book < ActiveRecord::Base
   has_and_belongs_to_many :users
   has_many :chunks
 
-  validates_presence_of :title, :edition
+  validates_presence_of :title, :edition, :users
   validates :edition, :uniqueness => {:scope => :title}
 
   before_destroy :destroy_chunks

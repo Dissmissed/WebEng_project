@@ -13,25 +13,25 @@
 
     <%= f.hidden_field :original_updated_at %>
 
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :title %>
       <br/>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :section %>
       <br/>
-      <%= f.text_field :section %>
+      <%= f.text_field :section, :class => "form-control" %>
     </div>
-    <div class="field">
+    <div class="field input-group">
       <%= f.label :user %>
       <br/>
       <%= f.collection_select(:user_id, User.all, :id, :username) %>
     </div>
-    <div class="field">
-      <%= f.cktext_area :content %>
+    <div class="field input-group">
+      <%= f.cktext_area :content, :class => "form-control" %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit :class => "btn btn-success" %>
     </div>
 <% end %>
