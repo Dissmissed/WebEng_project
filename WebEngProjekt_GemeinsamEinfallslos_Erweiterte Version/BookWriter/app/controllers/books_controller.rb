@@ -156,6 +156,16 @@ class BooksController < ApplicationController
     end
   end
 
+# filter books. respond with json for ajax
+  def filterBooks
+    # search code
+    results = ["Book1", "Book2"]
+
+    respond_to do |format|
+      format.json { render json: results }
+    end
+  end
+
   private
   def find_all_users
     @users = User.all

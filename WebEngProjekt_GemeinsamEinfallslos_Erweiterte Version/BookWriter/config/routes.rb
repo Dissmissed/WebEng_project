@@ -7,6 +7,9 @@ BookWriter::Application.routes.draw do
 
   devise_for :users
 
+  # Suchfunktion
+  post '/filterbooks', to: 'books#filterBooks', :defaults => { :format => 'json' }
+
   resources :books do
     get 'print', :on => :member
     post 'close', :on => :member
