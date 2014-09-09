@@ -1,6 +1,58 @@
 <h1><%= t 'views.book.index.title' %></h1>
 
-<%# für unsere suchanfrage: form_for @x, :url => {:action => "filterBooks"} ODER Ajax-jquery (intuitiver) %>
+<div class="panel panel-default">
+  <div class="panel-heading p">
+    Suche Bücher
+    <div class="btn-group btn-group-xs pull-right">
+      <button id="btn_simple" type="button" class="btn btn-default btn-info">Einfach</button>
+      <button id="btn_advanced" type="button" class="btn btn-default">Erweitert</button>
+    </div>
+  </div>
+  <div id="div_search" class="panel-body">
+    <div id="div_simple" class="input-group input-group-sm">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-danger" type="button">x</button>
+      </span>
+      <input id="simple_text" type="text" class="form-control" />
+      <span class="input-group-btn">
+        <button id="simple_go" class="btn btn-default btn-success" type="button">Go!</button>
+      </span>
+    </div>
+
+    <div id="div_advanced0" class="input-group input-group-sm search-adv">
+      <span class="input-group-btn">
+        <button id="adv_btn_del" class="btn btn-default btn-danger" type="button">x</button>
+      </span>
+      <select id="adv_sel_col" class="form-control">
+        <option value="0">Titel</option>
+        <option value="1">Auflage</option>
+        <option value="2">Veröffentlichungsdatum</option>
+        <option value="3">Genre</option>
+        <option value="4">Tags</option>
+        <option value="5">Autoren</option>
+      </select>
+      <span class="input-group-btn" style="width:5px;"></span>
+      <select id="adv_sel_op" class="form-control">
+        <option value="0">enthält</option>
+        <option value="1">enthält nicht</option>
+        <option value="2">größer als</option>
+        <option value="3">kleiner als</option>
+        <option value="4">vor</option>
+        <option value="5">nach</option>
+      </select>
+      <span class="input-group-btn" style="width:5px;"></span>
+      <input id="adv_text" type="text" class="form-control" />
+    </div>
+
+    <div id="div_advancedGo" class="btn-group btn-group-sm" style="margin-top: 3px;">
+      <button id="btn_plus" class="btn btn-default btn-warning" type="button">
+        +
+      </button>
+      <button id="adv_go" class="btn btn-default btn-success" type="button">
+        Go!
+      </button>
+    </div>
+  </div>
 
 <table id="table_show_books" class="table table-striped">
   <thead>
@@ -27,7 +79,6 @@
     <% end %>
   </tbody>
 </table>
-
-<br/>
+</div>
 
 <%= button_to I18n.t('views.book.index.new'), new_book_path, method: :get, :class => "btn btn-primary" %>

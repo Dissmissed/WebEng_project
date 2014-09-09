@@ -157,12 +157,30 @@ class BooksController < ApplicationController
   end
 
 # filter books. respond with json for ajax
-  def filterBooks
+  def filterBooksAdv
     # search code
-    results = ["Book1", "Book2"]
+    result_books = Book.searchAdv params[:search_obj]
+    result_array = []
+    result_books.each do |book|
+      result_array.push(["<a class=\"tbl_link\" href=\"/books/#{book.id.to_s}\">" + book.title + "</a>", book.edition, book.published, book.genre, book.tags, book.users_list]);
+    end
 
     respond_to do |format|
-      format.json { render json: results }
+      format.json { render json: result_array.to_json }
+    end
+  end
+
+  def filterBooksSimple
+    # search code
+
+    result_books = Book.search params[:query]
+    result_array = []
+    result_books.each do |book|
+      result_array.push(["<a class=\"tbl_link\" href=\"/books/#{book.id.to_s}\">" + book.title + "</a>", book.edition, book.published, book.genre, book.tags, book.users_list]);
+    end
+
+    respond_to do |format|
+      format.json { render json: result_array.to_json }
     end
   end
 
