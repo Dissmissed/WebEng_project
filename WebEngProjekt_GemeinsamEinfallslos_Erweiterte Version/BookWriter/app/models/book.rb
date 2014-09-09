@@ -49,18 +49,15 @@ class Book < ActiveRecord::Base
 
   def self.searchAdv(search)
     search_obj = JSON.parse(search)
-   find(:all, :conditions => ['title LIKE ?
-                             ', "%#{search_obj["title"]["contains"]}%"])
+    find(:all, :conditions => ['title LIKE ? AND title NOT LIKE ?
+                              AND edition = ? OR NULL AND edition != ? AND edition < ? AND edition > ?
+                              AND published < ? AND published > ?
+                              AND genre LIKE ? AND genre NOT LIKE ?
+                              AND tags LIKE ? AND tags NOT LIKE?',
+                              "%#{search_obj["title"]["contains"]}%", "%#{search_obj["title"]["contains_not"]}%",
+                              "%#{search_obj["edition"]["eq"]}%", "%#{search_obj["edition"]["neq"]}%", "%#{search_obj["edition"]["lt"]}%", "%#{search_obj["edition"]["gt"]}%",
+                              "%#{search_obj["published"]["lt"]}%", "%#{search_obj["published"]["gt"]}%",
+                              "%#{search_obj["genre"]["contains"]}%", "%#{search_obj["genre"]["contains_not"]}%",
+                              "%#{search_obj["tags"]["contains"]}%", "%#{search_obj["tags"]["contains_not"]}%"])
   end
-
-  # ['title LIKE ? AND title NOT LIKE ?
-  #                             AND edition = ? AND edition != ? AND edition < ? AND edition > ?
-  #                             AND published < ? AND published > ?
-  #                             AND genre LIKE ? AND genre NOT LIKE ?
-  #                             AND tags LIKE ? AND tags NOT LIKE?', search_obj["title"]["contains"], search_obj["title"]["contains_not"],
-  #  search_obj["edition"]["eq"], search_obj["edition"]["neq"], search_obj["edition"]["lt"], search_obj["edition"]["gt"],
-  #  search_obj["published"]["lt"], search_obj["published"]["gt"],
-  #  search_obj["genre"]["contains"], search_obj["genre"]["contains_not"],
-  #  search_obj["tags"]["contains"], search_obj["tags"]["contains_not"]])
-
 end
