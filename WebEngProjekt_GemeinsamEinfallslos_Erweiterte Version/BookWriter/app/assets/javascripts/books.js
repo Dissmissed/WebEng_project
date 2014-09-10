@@ -165,6 +165,19 @@ $(document).ready(function() {
             tablebooks.rows.add(data).draw();
 
         });
+
+    });
+
+    $(document).keypress(function(e) {
+        if(e.which == 13) {
+            var foc = $(':focus');
+            if(foc.attr("id") == "simple_text") {
+                $("#simple_go").click();
+            }
+            else if(foc.attr("id") == "adv_text") {
+                $("#adv_go").click();
+            }
+        }
     });
 
 })
