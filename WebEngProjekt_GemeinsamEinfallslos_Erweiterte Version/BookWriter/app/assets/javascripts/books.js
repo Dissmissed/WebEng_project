@@ -69,7 +69,7 @@ $(document).ready(function() {
     function filterOperands(component){
         component.parent().find("#adv_text").removeAttr('placeholder');
         if(component.val() == 2) {
-            component.parent().find("#adv_text").attr('placeholder','dd.MM.yyyy');
+            component.parent().find("#adv_text").attr('placeholder','yyyy-MM-dd');
         }
         var elem = component.parent().find("#adv_sel_op option");
         var map = mapOperands[component.val()];
