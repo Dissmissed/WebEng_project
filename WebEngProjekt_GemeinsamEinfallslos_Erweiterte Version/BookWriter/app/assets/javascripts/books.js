@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 
     var criteriaCount = 0;
-    var mapOperands = [[0,1],[2,3],[4,5],[0,1],[0,1]];
+    var mapOperands = [[0,1],[2,3,4,5],[6,7],[0,1],[0,1]];
 
     $("[id^=div_advanced]").hide();
     $("#btn_simple").click(function(){
@@ -52,8 +52,16 @@ $(document).ready(function() {
             criteriaCount--;
         }
         else {
-            alert("yolo");
+            var div_adv = $("#div_advanced0");
+            div_adv.find("#adv_sel_col").val(0).change();
+            div_adv.find("#adv_text").val("");
+            $("#simple_text").val("");
+            $("#simple_go").click();
         }
+    });
+    $("#simple_btn_del").click(function() {
+        $("#simple_text").val("");
+        $("#simple_go").click();
     });
     $("#adv_sel_col").change(function(){
         filterOperands($(this));
@@ -78,7 +86,7 @@ $(document).ready(function() {
     };
     filterOperands($("#adv_sel_col"));
 
-    $("#simple_go").click(function(){
+    $("#simple_go").click(function goSimple(){
 
         var query = $("#simple_text").val();
         $.post( "/filterbookssimple", { query: query }, function( data ) {
