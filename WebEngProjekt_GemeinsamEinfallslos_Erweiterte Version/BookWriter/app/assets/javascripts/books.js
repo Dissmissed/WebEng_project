@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 
     var criteriaCount = 0;
-    var mapOperands = [[0,1],[2,3,4,5],[6,7],[0,1],[0,1]];
+    var mapOperands = [[0,1],[2,3,4,5],[6,7],[0,1],[0,1],[0,1]];
 
     $("[id^=div_advanced]").hide();
     $("#btn_simple").click(function(){
@@ -152,9 +152,9 @@ $(document).ready(function() {
               }
           } else if( entry.col == 5 ){
               if( entry.op == 0 ) {
-                  autor.contains += entry.text;
+                  autoren.contains += entry.text;
               } else if( entry.op == 1) {
-                  autor.contains_not += entry.text;
+                  autoren.contains_not += entry.text;
               }
           }
         });

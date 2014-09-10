@@ -44,7 +44,7 @@ class Book < ActiveRecord::Base
   def self.search(search)
     search_condition = "%" + search + "%"
 
-    find(:all, :conditions => ['title LIKE ? OR edition LIKE ? OR published LIKE ? OR tags LIKE ? OR genre LIKE ? ', search_condition, search_condition, search_condition, search_condition, search_condition])
+    find(:all, :include => :users, :conditions => ['title LIKE ? OR edition LIKE ? OR published LIKE ? OR tags LIKE ? OR genre LIKE ? OR users.username LIKE ?', search_condition, search_condition, search_condition, search_condition, search_condition, search_condition])
   end
 
   def self.searchAdv(search)
@@ -54,7 +54,8 @@ class Book < ActiveRecord::Base
       :edition => { :eq => "edition = ?", :neq => "edition != ?", :lt => "edition < ?", :gt => "edition > ?" },
       :published => { :before => "published < ?", :after => "published > ?" },
       :genre => { :contains => "genre LIKE ?", :contains_not => "genre NOT LIKE ?"},
-      :tags => { :contains => "tags LIKE ?", :contains_not => "tags NOT LIKE ?"}
+      :tags => { :contains => "tags LIKE ?", :contains_not => "tags NOT LIKE ?"},
+      :autor => { :contains => "users.username LIKE ?", :contains_not => "users.username NOT LIKE ?"}
     }
 
     sql_query_string = "1=1"
@@ -77,7 +78,7 @@ class Book < ActiveRecord::Base
 
     sql_query_vars.insert(0, sql_query_string)
 
-    find(:all, :conditions => sql_query_vars)
+    find(:all, :include => :users, :conditions => sql_query_vars)
   #  find(:all, :conditions => ['title LIKE ? AND title NOT LIKE ?
   #                            AND edition = ? OR NULL AND edition != ? AND edition < ? AND edition > ?
   #                            AND published < ? AND published > ?
